@@ -26,40 +26,6 @@
   display: none;
 }
 
-#bienvenue{
-  height: 500px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#feuille{
-  /*border: solid thin gray;
-  border-radius: 10px;
-  background-color: rgba(110, 132, 156, 0.897);
-  /*box-shadow: 3px 3px rgba(0, 0, 0, 0.63);*/
-  padding: 20px;
-}
-
-#myVideo {
-  object-fit: cover;
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: -1;
-}
-
-#imgVoiceAi{
-  margin: auto;
-  display: flex;
-  vertical-align: middle;
-  height: auto;
-  max-width: 100%;
-  object-fit: contain; 
-  max-height: 100%; 
-}
 
 
 .navbar{
@@ -101,6 +67,21 @@
   font-size: 20px;
 }
 
+.button{
+  background-color: #306B34;
+  border-radius: 5px;
+  border: none;
+}
+
+.button:hover{
+  background-color: #245227;
+}
+
+.button:active{
+  background-color: #1c3f1e;
+}
+
+
 .loaded {
   height: 150px !important;
 }
@@ -135,25 +116,6 @@
   border-radius: 5px;
 }
 
-.flippyTitle{
-  text-align: center;
-}
-.flippyTitle span {
-  position: relative;
-  display: inline-block;
-  font-size: 150px;
-  text-transform: uppercase;
-  animation: flip 4s infinite;
-  animation-delay: calc(.3s * var(--i))
-}
-@keyframes flip {
-  0%,65% {
-    transform: rotateY(360deg) 
-  }
-   65% {
-    color:  #C08552; /* première couleur */
-  }
-}
 
 html{
   width: 100%;
@@ -243,6 +205,7 @@ iframe{
   margin: auto;
   background-color: #3f7d20;
   width: auto;
+  max-width: 270px;
   height: auto;
   border-radius: 20px;
   transition: all 0.5s;

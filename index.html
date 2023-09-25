@@ -71,25 +71,31 @@
     
     <h1>NOS SERVICES</h1>
 
-        <div class="Container">
-
-           <!--<a class="widgetLink" href="../template/projet/zooplanner.html">-->
-                <div class="widget">
-                    <div class="widgetTitre"><h4>Rénovation</h4></div>
-                    <div class="widgetImage"><img class="widgetImage" src="../asset/image/renovation.png"></div>
-                    <div class="widgetDescription"><p>en savoir plus</p></div>
-                </div>
-            </a>
-
-            <!--<a class="widgetLink" href="../template/projet/AP_GSB_AMM.html">-->
-                <div class="widget">
-                    <div class="widgetTitre"><h4>Construction</h4></div>
-                    <div class="widgetImage"><img class="widgetImage" src="../asset/image/construction.png"></div>
-                    <div class="widgetDescription"><p>en savoir plus</p></div>
-                </div>
-            </a>
+    <div class="Container">
+        <div class="widget">
+            <div class="widgetTitre"><h4>Rénovation</h4></div>
+            <div class="widgetImage"><img class="widgetImage" src="../asset/image/renovation.png"></div>
+            <div class="widgetDescription"><button class="button" onclick="toggleInfo('renovation')">en savoir plus</button></div>
+            <div><p class="infoSupp" id="renovation" style="display: none;">
+                Lorem ipsum dolor sit amet, consectetur adipiscing 
+                elit. Ut finibus dui lacus, quis tempus magna vehicula 
+                sit amet. Donec feugiat nulla in quam blandit, a venenat
+                is odio luctus.                    
+            </p></div>
         </div>
-
+    
+        <div class="widget">
+            <div class="widgetTitre"><h4>Construction</h4></div>
+            <div class="widgetImage"><img class="widgetImage" src="../asset/image/construction.png"></div>
+            <div class="widgetDescription"><button class="button" onclick="toggleInfo('construction')">en savoir plus</button></div>
+            <div><p class="infoSupp" id="construction" style="display: none;">
+                Lorem ipsum dolor sit amet, consectetur adipiscing 
+                elit. Ut finibus dui lacus, quis tempus magna vehicula 
+                sit amet. Donec feugiat nulla in quam blandit, a venenat
+                is odio luctus.                    
+            </p></div>
+        </div>
+    </div>
     </div>
 
     </div>
@@ -104,19 +110,10 @@
 <div class="bg">
 
                     <div id="slider">
-                        <img class="screenshot" src="template/chantier/chantier1.jpg" alt="ACCUEIL" id="slide">
+                        <img class="screenshot" src="asset/image/chantier1.jpg" alt="ACCUEIL" id="slide">
                         <div id="precedent" onclick="ChangeSlide(-1)"><</div>
                         <div id="suivant" onclick="ChangeSlide(1)">></div>
                     </div>
-
-                    <br>
-
-                    <div id="slider">
-                        <img class="screenshot" src="template/chantier/chantier3.jpg" alt="ACCUEIL" id="slide">
-                        <div id="precedent" onclick="ChangeSlide(-1)"><</div>
-                        <div id="suivant" onclick="ChangeSlide(1)">></div>
-                    </div>
-
     </div>
 
 
@@ -135,7 +132,7 @@
         <h2><img class="icone" src="/asset/image/email.png"> sasumaxime92130@gmail.com</h2>
         <h2><img class="icone" src="/asset/image/compass.png"> 23 avenue du bas meudon, ISSY LES MOULINEAUX 92130</h2>
         <br>
-        <h2>OU BIEN</h2>
+        <!--<h2>OU BIEN</h2>
 
         
 
@@ -152,7 +149,7 @@
         
                 <input type="submit" value="Envoyer">
             </form>
-        </div>
+        </div>-->
 
     </div></div>
 

@@ -1,4 +1,4 @@
-var slide = new Array("template/chantier/chantier1.jpg", "template/chantier/chantier2.jpg", "template/chantier/chantier3.jpg", "template/chantier/chantier4.jpg");
+var slide = new Array("asset/image/chantier1.jpg", "asset/image/chantier2.jpg", "asset/image/chantier3.jpg", "asset/image/chantier4.jpg");
 var numero = 0;
 var cpt=0;
 
@@ -53,35 +53,14 @@ async function showNav(){
     }
 }
 
-function highlightNav() {
-    // Obtenez la position actuelle de la fenêtre
-    var scrollPosition = $(window).scrollTop();
-  
-    // Parcourez chaque élément de navigation
-    $('.nav-item').each(function () {
-      var currentLink = $(this);
-      var targetSection = $(currentLink.find('a').attr('href'));
-  
-      // Vérifiez si la section est visible à l'écran
-      if (
-        targetSection.position().top <= scrollPosition &&
-        targetSection.position().top + targetSection.height() > scrollPosition
-      ) {
-        // Supprimez la classe "active" de tous les éléments de navigation
-        $('.nav-item').removeClass('active');
-        // Ajoutez la classe "active" à l'élément de navigation correspondant
-        currentLink.addClass('active');
-      } else {
-        // Si la section n'est pas visible, supprimez la classe "active"
-        currentLink.removeClass('active');
-      }
-    });
+function toggleInfo(id) {
+  var infoSupp = document.getElementById(id);
+  if (infoSupp.style.display === "none") {
+      infoSupp.style.display = "block";
+  } else {
+      infoSupp.style.display = "none";
   }
-  
-  // Appelez la fonction lorsque la page est chargée et lors du défilement
-  $(document).ready(function () {
-    $(window).on('load scroll', highlightNav);
-  });
+}
 
 window.onresize = function(){
     if(window.screen.width >= 991){
