@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../asset/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../asset/css/style.css">
+
+        <title>Connexion</title>
+        <link rel="icon" type="image/x-icon" href="../asset/image/letter-p.ico">
+    
+        <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous">
+        </script>
+        <script> 
+        $(function(){
+            $("#header").load("../asset/header.html"); 
+            $("#footer").load("../asset/footer.html"); });
+    </script> 
+    </head>
+<body>
+    <div id="header"></div>
+
+    <h1>NOS SERVICES</h1>
+
+    <div class="Container">
+        <div class="widget">
+            <div class="widgetTitre"><h4>Rénovation</h4></div>
+            <div class="widgetImage"><img class="widgetImage" src="../asset/image/renovation.png"></div>
+            <div class="widgetDescription"><button class="button" onclick="toggleInfo('renovation')">en savoir plus</button></div>
+            <div><p class="infoSupp" id="renovation" style="display: none;">
+                Lorem ipsum dolor sit amet, consectetur adipiscing 
+                elit. Ut finibus dui lacus, quis tempus magna vehicula 
+                sit amet. Donec feugiat nulla in quam blandit, a venenat
+                is odio luctus.                    
+            </p></div>
+        </div>
+    
+        <div class="widget">
+            <div class="widgetTitre"><h4>Construction</h4></div>
+            <div class="widgetImage"><img class="widgetImage" src="../asset/image/construction.png"></div>
+            <div class="widgetDescription"><button class="button" onclick="toggleInfo('construction')">en savoir plus</button></div>
+            <div><p class="infoSupp" id="construction" style="display: none;">
+                Lorem ipsum dolor sit amet, consectetur adipiscing 
+                elit. Ut finibus dui lacus, quis tempus magna vehicula 
+                sit amet. Donec feugiat nulla in quam blandit, a venenat
+                is odio luctus.                    
+            </p></div>
+        </div>
+    </div>
+
+    
+
+    <div id="footer"></div>
+</body>
+</html>
