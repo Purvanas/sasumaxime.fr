@@ -31,17 +31,17 @@ async function showNav(){
         document.getElementById('link2').style.opacity = "1";
         await sleep(120)
         document.getElementById('link3').style.opacity = "1";
-        await sleep(120)
-        document.getElementById('link4').style.opacity = "1";
-        await sleep(120)
-        document.getElementById('link5').style.opacity = "1";
+        //await sleep(120)
+        //document.getElementById('link4').style.opacity = "1";
+        //await sleep(120)
+        //document.getElementById('link5').style.opacity = "1";
         cpt++;
     }
     else{    
-        document.getElementById('link5').style.opacity = "0"; 
-        await sleep(100)
-        document.getElementById('link4').style.opacity = "0";
-        await sleep(100) 
+        //document.getElementById('link5').style.opacity = "0"; 
+        //await sleep(100)
+        //document.getElementById('link4').style.opacity = "0";
+        //await sleep(100) 
         document.getElementById('link3').style.opacity = "0"; 
         await sleep(100)
         document.getElementById('link2').style.opacity = "0";  
