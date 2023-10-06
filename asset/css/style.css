@@ -12,16 +12,18 @@ html{
 #boutonDeNav {
   display: block;
   background-color: #326C36;
-  right: 0%;
+  right: 0;
   top: 105px;
   padding: 2px;
   padding-left: 5px;
   width: 150px;
   height: 0px;
-  position: fixed;
+  position: absolute;
   z-index: 10;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 
-  transition: 1s ease all;
+  transition: all 1s;
 }
 
 #nav-link-button-div {
@@ -224,20 +226,12 @@ b{
 }
 
 
-.ligne-transition {
-  border: #8a603b solid;
-  width: 100%;
-  position: relative;
-  margin-top: 100px;
-  margin-bottom: 100px;
-  overflow: visible;
-}
-
 .bg{
   z-index: 3;
   width: auto;
   height: auto;
-  margin-top: 100px;
+  /*margin-top: 100px;*/
+  
 }
 
 .bg-slider{
@@ -257,6 +251,7 @@ b{
   padding-right: 10%;
   padding-top: 20px;
   padding-bottom: 20px;
+  margin-bottom: 0px;
 }
 
 .tpage{
@@ -278,6 +273,13 @@ b{
 
 .white-txt{
   color: rgb(207, 207, 207);
+}
+
+.contact{
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  grid-row-gap: 80px;
+  margin-bottom: 150px;
 }
 
 .credit{
@@ -317,7 +319,7 @@ overflow:hidden ;
 
 .slided-right,
 .slided-left {
-  transition: 1s ease all;
+  transition: all 0.5s;
 }
 
 .slided-right{
@@ -338,7 +340,7 @@ overflow:hidden ;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   max-height: 700px;
-  transition: 1s ease all;
+  transition: all 0.5s;
 }
 
 .slider-2-item {
@@ -465,4 +467,16 @@ overflow:hidden ;
     overflow:hidden ;
     display: none;
     }
+}
+
+@media (max-width : 500px){
+  h2{
+    font-size: 15px;
+  }
+}  
+
+@media (max-width : 350px){
+  h2{
+    font-size: 12px;
+  }
 }

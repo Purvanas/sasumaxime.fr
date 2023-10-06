@@ -28,7 +28,7 @@ async function toggleNavbarOnScroll() {
     document.querySelector('.navbar').style.top = `-${navbarHeight}px`;
 
     if(document.getElementById("boutonDeNav").classList.contains("loaded")){
-      document.getElementById('boutonDeNav').style.display = "none"
+      //document.getElementById('boutonDeNav').style.display = "none"
       showNav(0)
     }
   }
@@ -83,18 +83,24 @@ async function slider(direction){
     /*document.getElementById("slide"+Math.abs(number%nbSlide)).classList.add("slided-left")
     await sleep(300);*/
     document.getElementById("slide"+Math.abs(number%nbSlide)).style.display = "none"
+    document.getElementById("text"+Math.abs(number%nbSlide)).style.display = "none"
+
     document.getElementById("slide"+Math.abs(number%nbSlide)).classList.remove("slided-left")
     number += direction
     document.getElementById("slide"+Math.abs(number%nbSlide)).style.display = "grid"
+    document.getElementById("text"+Math.abs(number%nbSlide)).style.display = "grid"
   }
 
   if(direction === 1){
     /*document.getElementById("slide"+Math.abs(number%nbSlide)).classList.add("slided-right")
     await sleep(300);*/
     document.getElementById("slide"+Math.abs(number%nbSlide)).style.display = "none"
+    document.getElementById("text"+Math.abs(number%nbSlide)).style.display = "none"
+
     document.getElementById("slide"+Math.abs(number%nbSlide)).classList.remove("slided-right")
     number += direction
     document.getElementById("slide"+Math.abs(number%nbSlide)).style.display = "grid"
+    document.getElementById("text"+Math.abs(number%nbSlide)).style.display = "grid"
   }
 }
 
