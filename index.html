@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Entreprise générale du BTP experts menuisiers/charpentiers"/>
+    <meta name="description" content="Entreprise générale du BTP experts menuisiers et charpentiers"/>
+    <meta name="keywords" content="BTP, charpentiers, charpentier, charpenterie, menuisiers, menuisier, menuiserie, sasumaxime, construction, rénovation, traveaux" />
 
     <link rel="canonical" href="https://sasumaxime.fr">
     <link rel="stylesheet" href="asset/css/bootstrap.min.css">
@@ -17,7 +18,7 @@
     <script> 
     $(function(){
         $("#header").load("asset/header.html"); 
-        $("#footer").load("asset/footer.html"); });
+    });
     </script> 
 </head>
 
@@ -26,41 +27,57 @@
     
     <div id="header"></div>
 
-    <h1><img src="asset/image/Logo_SASU_Maxime2.png" style="max-height: 300px; border-radius: 50px;"/></h1><br>
-    
-    <h1>Entreprise générale du BTP experts menuisiers/charpentiers</h2>
-<div class="bg mep">
+    <div class="slider-container slider-1">
 
-    
-
-    <h2>LOREM IPSUM</h2>
-
-  
-
-    <h2>LOREM IPSUM</h2>
-
-    <h3>
-
-        <b>LOREM IPSUM</b> <br>
-        Lorem ipsum dolor sit amet, consectetur adipiscing 
-        elit. Ut finibus dui lacus, quis tempus magna vehicula 
-        sit amet. Donec feugiat nulla in quam blandit, a venenat
-        is odio luctus. Nam pellentesque dui in magna semper, vel
-        eleifend mauris commodo. Curabitur efficitur felis sed dol
-        or placerat ullamcorper<br><br>
-
-        <b>LOREM IPSUM</b> <br>
-        Lorem ipsum dolor sit amet, c
-        onsectetur adipiscing elit. Ut finibus d
-        ui lacus, quis tempus magna vehicula sit a
-        met. Donec feugiat nulla in quam blandit, a venen
-        atis odio luctus. Nam pellentesque dui in magna semper, vel el
-        eifend mauris co
-        mmodo. Curabitur efficitur felis sed dolor placerat ullamcorper
-    </h3>
-
+        <div class="slider">
+            <img class="screenshot" src="asset/image/chantier1.jpg">
+            <img class="screenshot" src="asset/image/chantier2.jpg">
+            <img class="screenshot" src="asset/image/chantier3.jpg">
+            <img class="screenshot" src="asset/image/chantier4.jpg">
+            <img class="screenshot" src="asset/image/chantier1.jpg">
+        </div>
 
     </div>
+
+    
+    <h1><img src="asset/image/Logo_SASU_Maxime2.png" style="max-height: 300px; border-radius: 50px;"/></h1><br>
+
+    <div class="bg-slider">
+    
+        <h1>Entreprise générale du BTP experts <b>menuisiers</b> et <b>charpentiers</b></h2>
+        <div class="bg mep">
+
+            
+
+            <h2>LOREM IPSUM</h2>
+
+        
+
+            <h2>LOREM IPSUM</h2>
+
+            <h3>
+
+                <b>LOREM IPSUM</b> <br>
+                Lorem ipsum dolor sit amet, consectetur adipiscing 
+                elit. Ut finibus dui lacus, quis tempus magna vehicula 
+                sit amet. Donec feugiat nulla in quam blandit, a venenat
+                is odio luctus. Nam pellentesque dui in magna semper, vel
+                eleifend mauris commodo. Curabitur efficitur felis sed dol
+                or placerat ullamcorper<br><br>
+
+                <b>LOREM IPSUM</b> <br>
+                Lorem ipsum dolor sit amet, c
+                onsectetur adipiscing elit. Ut finibus d
+                ui lacus, quis tempus magna vehicula sit a
+                met. Donec feugiat nulla in quam blandit, a venen
+                atis odio luctus. Nam pellentesque dui in magna semper, vel el
+                eifend mauris co
+                mmodo. Curabitur efficitur felis sed dolor placerat ullamcorper
+            </h3>
+
+
+        </div>
+    </div>   
 
     
 
@@ -111,13 +128,47 @@
 
 <div class="bg">
 
-                    <div id="slider">
-                        <div id="precedent" onclick="ChangeSlide(-1)"><</div>
-                        <div><img class="screenshot" src="asset/image/chantier1.jpg" alt="ACCUEIL" id="slide"></div>
-                        <div id="suivant" onclick="ChangeSlide(1)">></div>
-                    </div>
+    
+    
+
+<div class="container-slider-2">
+
+    <button class="btn-slider" onclick="slider(-1)"><</button>
+
+
+    <div class="slider-2" id="slide0"  style="display: grid;"> 
+        <div class="slider-2-item"><img class="slider-2-img" src="/asset/image/slider/chantier1.webp"></div>
+        <div class="slider-2-item"><img class="slider-2-img" src="/asset/image/slider/chantier2.webp"></div>
+        <div class="slider-2-item"><img class="slider-2-img" src="/asset/image/slider/chantier3.webp"></div>
+        <div class="slider-2-item"><img class="slider-2-img" src="/asset/image/slider/chantier4.webp"></div>
     </div>
 
+    <div class="slider-2" id="slide1" style="display: none;"> 
+        <div class="slider-2-item"><img class="slider-2-img" src="/asset/image/slider/construction1.webp"></div>
+        <div class="slider-2-item"><img class="slider-2-img" src="/asset/image/slider/construction2.webp"></div>
+        <div class="slider-2-item"><img class="slider-2-img" src="/asset/image/slider/construction3.webp"></div>
+        <div class="slider-2-item"><img class="slider-2-img" src="/asset/image/slider/construction4.webp"></div>
+    </div>
+
+    <div class="slider-2" id="slide2"  style="display: none;"> 
+        <div class="slider-2-item"><img class="slider-2-img" src="/asset/image/slider/renovation1.webp"></div>
+        <div class="slider-2-item"><img class="slider-2-img" src="/asset/image/slider/renovation2.webp"></div>
+        <div class="slider-2-item"><img class="slider-2-img" src="/asset/image/slider/renovation3.webp"></div>
+        <div class="slider-2-item"><img class="slider-2-img" src="/asset/image/slider/renovation4.webp"></div>
+    </div>
+
+    <button class="btn-slider"  onclick="slider(1)">></button>
+
+</div>
+
+<div class="slider-2-description">
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+        ut aliquip ex ea commodo consequat.
+    </p>
+</div>
 
 </div>  
 
@@ -126,7 +177,7 @@
 
 
 <a id="contact"></a>
-<div class="white-bg bg mep">
+<div class="white-bg bg mep tpage">
 
 <h1>NOUS CONTACTER</h1>
 
@@ -140,11 +191,11 @@
 
 
     
-    <div class="bg mep">
+    <div class="credit">
 
 
    
-        <h2>CRÉDITS</h2>
+        <h2 style="text-align: center; margin-bottom: 100px;">Mention légals</h2>
         <p>J'ai utilisé des icones trouvé sur <a href="https://www.flaticon.com">Flaticon</a> dont voici les auteurs :</p>
 
                 <br><a href="https://www.flaticon.com/fr/icones-gratuites/construction" title="construction icônes">Construction icônes créées par Vichanon Chaimsuk - Flaticon</a>

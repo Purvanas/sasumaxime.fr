@@ -1,18 +1,5 @@
-var slide = new Array("asset/image/chantier1.jpg", "asset/image/chantier2.jpg", "asset/image/chantier3.jpg", "asset/image/chantier4.jpg");
-var numero = 0;
 var cpt=0;
-
-
-
-
-function ChangeSlide(sens) {
-    numero = numero + sens;
-    if (numero < 0)
-        numero = slide.length - 1;
-    if (numero > slide.length - 1)
-        numero = 0;
-    document.getElementById("slide").src = slide[numero];
-}
+let number = 0;
 
 function sleep(ms) {
     return new Promise(
@@ -53,12 +40,25 @@ async function showNav(){
     }
 }
 
-function toggleInfo(id) {
-  var infoSupp = document.getElementById(id);
-  if (infoSupp.style.display === "none") {
-      infoSupp.style.display = "block";
-  } else {
-      infoSupp.style.display = "none";
+let nbSlide = 3
+async function slider(direction){
+
+  if(direction === -1){
+   /* document.getElementById("slide"+Math.abs(number%nbSlide)).classList.add("slided-left")
+    await sleep(300);*/
+    document.getElementById("slide"+Math.abs(number%nbSlide)).style.display = "none"
+    document.getElementById("slide"+Math.abs(number%nbSlide)).classList.remove("slided-left")
+    number += direction
+    document.getElementById("slide"+Math.abs(number%nbSlide)).style.display = "grid"
+  }
+
+  if(direction === 1){
+    /*document.getElementById("slide"+Math.abs(number%nbSlide)).classList.add("slided-right")
+    await sleep(300);*/
+    document.getElementById("slide"+Math.abs(number%nbSlide)).style.display = "none"
+    document.getElementById("slide"+Math.abs(number%nbSlide)).classList.remove("slided-right")
+    number += direction
+    document.getElementById("slide"+Math.abs(number%nbSlide)).style.display = "grid"
   }
 }
 
