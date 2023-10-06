@@ -21,7 +21,7 @@ html{
   position: fixed;
   z-index: 10;
 
-  transition: 1s ease height;
+  transition: 1s ease all;
 }
 
 #nav-link-button-div {
@@ -32,6 +32,7 @@ html{
 
 .navbar{
   position: fixed;
+  transition: top 0.5s;
   top: 0;
   left: 0;
   width: 100%;
@@ -316,7 +317,7 @@ overflow:hidden ;
 
 .slided-right,
 .slided-left {
-  transition: all 0.3s ease-in-out
+  transition: 1s ease all;
 }
 
 .slided-right{
@@ -337,7 +338,7 @@ overflow:hidden ;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   max-height: 700px;
-  transition: all 0.3s ease-in-out
+  transition: 1s ease all;
 }
 
 .slider-2-item {
